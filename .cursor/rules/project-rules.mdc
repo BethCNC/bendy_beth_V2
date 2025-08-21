@@ -1,0 +1,23 @@
+---
+alwaysApply: true
+---
+# 🚦 Project Rules – BendyBeth V2
+
+## 1. Styling
+- Use **Tailwind CSS only** for all styling.
+- All design tokens (colors, fonts, spacing, breakpoints) live in `tailwind.config.js`.
+- `styles.css` should only contain:
+  - `@tailwind base;`
+  - `@tailwind components;`
+  - `@tailwind utilities;`
+  - Tiny helper classes if absolutely needed.
+- ❌ Do not create extra CSS files (like primitives, semantic, alias, effects, etc.).
+- ❌ Do not duplicate Tailwind utilities in CSS.
+
+## 2. File & Folder Structure
+```plaintext
+app/          → Next.js routes
+components/   → Reusable React components
+styles/       → styles.css
+public/       → static assets (images, icons, etc.)
+docs/         → STYLE_GUIDE.md
